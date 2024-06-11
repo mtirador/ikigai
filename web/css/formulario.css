@@ -1,0 +1,570 @@
+/*imagen transparenete para integrarla mejor a la página*/
+.imagen-formulario{
+    opacity:0.2;
+}
+
+/*el texto que aparece cuando dejas vacio el input(rojo en plan no dejar vacio)*/
+.help-block {
+    font-size: 12px; /* Cambia el tamaño de la letra según tus preferencias */
+    color: #d60c9f; /* Color del texto */
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: bold !important;
+    color:#B65598;
+}
+
+.panel-heading{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: #F5F2FF !important;
+}
+
+.panel-title{
+    font-size: 2.5rem;
+}
+
+.texto-vistaentrada{
+    color:#B65598;
+    margin-bottom: 50px;
+}
+
+/* Estilos para la imagen */
+.imagen-pequena {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.texto-titulo{
+    margin-bottom: 50px;
+}
+    /* Estilos Generales */
+    h1 {
+        color: #B65598;
+       
+    }
+    
+    .alert.alert-info {
+        background-color: transparent;
+        color: #B65598;
+        border-color: transparent;
+    }
+    
+    .panel.panel-default {
+        background-color: transparent;
+        color: #555;
+    }
+    
+    .panel-heading {
+        background-color: #e6d7f6;
+        color: #B65598;
+    }
+    
+    .panel-title {
+        color: #b65598;
+    }
+    
+    .panel-body {
+      
+        color: #c973b3;
+       
+    }
+    
+    
+    
+/*...........................VIEW.......................................*/
+    /*tarjeta*/
+    /* Estilos para la tarjeta */
+.card {
+    background-image: url('https://images.pexels.com/photos/2310713/pexels-photo-2310713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); /* URL directa de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    background-color: #f5f5f5; /* Color de fondo de respaldo */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(182, 85, 152, 0.3), 
+                6px 0 6px rgba(182, 85, 152, 0.3); 
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado externo */
+}
+
+    /* Botones */
+    .btn-primary {
+        background-color: #e6d7f6 !important;
+        border-color: #e6d7f6 !important;
+        border-radius: 5px !important;
+         color: #B65598 !important;
+    }
+    
+    .btn-primary:hover {
+        background-color: #e6d7f6 !important;
+        border-color: #e6d7f6 !important;
+        border-radius: 5px !important;
+    }
+    
+    .btn-danger {
+        background-color: #e6d7f6 !important;
+        border-color: #e6d7f6 !important;
+        border-radius: 5px !important;
+    }
+    
+    .btn-group > .btn:not(:first-child),
+    .btn-group > .btn-group:not(:first-child) {
+        margin-left: 10px !important;
+        border-radius: 5px !important; 
+       
+    }
+    
+    .btn-danger:hover {
+        background-color: #e6d7f6 !important;
+        border-color: #e6d7f6 !important;
+        border-radius: 5px !important; 
+    }
+
+   
+    /* Estilos del Contenedor Principal */
+    .objetivos-view {
+        margin-top: 50px;
+    }
+
+    /* Estilos de las Columnas */
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+
+    /* Ajustar la altura de las columnas */
+    .row-eq-height {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row-eq-height > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Enlaces */
+    a {
+        color: #B65598 !important;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    a:hover {
+        color: #d60c9f !important;
+        text-decoration: underline;
+    }
+
+    /*TARJETA...*/
+
+    /* Estilos para la tarjeta */
+.card {
+    background-color: #e6d7f6; /* Cambia el color de fondo según sea necesario */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.3); /* Agrega una sombra */
+    padding: 20px; /* Ajusta el espaciado interno */
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    color: #B65598; /* Cambia el color del título según sea necesario */
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Aplica negrita al texto */
+    margin-bottom: 20px; /* Ajusta el espaciado inferior */
+}
+
+.card-data {
+    color: #B65598; /* Color para los datos */
+    font-size: 16px; /* Tamaño de fuente para los datos */
+    /* Puedes agregar más estilos aquí según sea necesario */
+}
+
+
+/* Estilos para los botones dentro de la tarjeta */
+.card .btn {
+    background-color: #B65598; /* Cambia el color de fondo del botón según sea necesario */
+    border-color: #B65598; /* Cambia el color del borde del botón según sea necesario */
+    color: #FFFFFF; /* Cambia el color del texto del botón según sea necesario */
+    margin-right: 10px; /* Ajusta el espaciado derecho entre los botones */
+}
+
+.card .btn:hover {
+    background-color: #d60c9f; /* Cambia el color de fondo del botón al pasar el ratón según sea necesario */
+    border-color: #d60c9f; /* Cambia el color del borde del botón al pasar el ratón según sea necesario */
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.card img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    border-radius: 10px; /* Agrega bordes redondeados a la imagen */
+    margin-top: 20px; /* Ajusta el espaciado superior */
+}
+
+   
+   /* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-tarjeta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e6d7f6; /* Color de fondo según la paleta */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+    text-align: center;
+}
+
+.popup-contenido p {
+    margin-bottom: 20px;
+    color: #b65598; /* Color de texto según la paleta */
+}
+
+.opciones button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-danger {
+    color: #B65598 !important; /* Cambia el color del texto del botón según sea necesario */
+}
+.btn-danger:hover {
+    color: #d60c9f !important; /* Cambia el color del texto del botón al pasar el ratón según sea necesario */
+}
+
+
+.btn-continuar {
+    background-color: #B65598;
+    color: #F5F2FF;
+}
+
+.btn-continuar:hover {
+    background-color: #d60c9f; /* Color de fondo del botón al pasar el ratón según la paleta */
+}
+
+.btn-cancelar {
+    background-color: #B65598; /* Color de fondo del botón según la paleta */
+    color: #F5F2FF;
+}
+
+.btn-cancelar:hover {
+    background-color: #d60c9f; /* Color de fondo del botón al pasar el ratón según la paleta */
+}
+
+.btn-success:hover {
+    color: #F5F2FF !important;
+    background-color: #c973b3 !important;
+    border-color: #c973b3 !important;
+}
+
+.btn-success{
+    color: #F5F2FF !important;
+    background-color: #c973b3 !important;
+    border-color: #c973b3 !important;
+}
+
+
+
+
+/*Scroll */
+
+/* Estilos para la lista scrollable */
+.scrollable-list {
+    max-height: 300px; /* Establece la altura máxima para la lista */
+    overflow-y: auto; /* Permite el desplazamiento vertical cuando la lista supera la altura máxima */
+    padding-right: 10px; /* Añade un espacio a la derecha para evitar que el contenido se solape con la barra de desplazamiento */
+    border-radius: 5px; /* Agrega bordes redondeados al contenedor */
+    
+}
+
+.scrollable-list::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+    background-color: #B65598; /* Color del botón de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados del botón */
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+    background-color: #e6d7f6; /* Color de fondo de la barra de desplazamiento */
+}
+
+
+/*afterForm*/
+
+.titulo-proximos{
+    color: #B65598;
+}
+
+.titulo-busqueda{
+    color: #B65598;
+}
+/* Estilos para las tablas */
+.objetivos-proximos .list-group,
+.buscador-objetivos .scrollable-list {
+    background-color: #f5f2ff; /* Cambia el color de fondo según sea necesario */
+}
+
+.list-group listado-proximos{
+    background-color: #f5f2ff !important;
+}
+
+/* Estilos para los elementos de la lista */
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #F5F2FF !important; /* Color de fondo según la paleta */
+    border: none; /* Quitamos el borde existente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+
+/* Estilos para la lista de objetivos encontrados */
+
+#objetivos-encontrados {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sombreado */
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #F5F2FF; /* Color de fondo según la paleta */
+    box-shadow: 0 2px 5px rgba(230, 215, 246, 0.8); /* Sombra */
+}
+
+/* Estilos para cada objetivo encontrado */
+.item-encontrado {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #d1bdf1; /* Borde inferior */
+}
+
+/* Estilos para el título del objetivo */
+.titulo-objetivo {
+    color: #B65598; /* Color según la paleta */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el detalle del objetivo */
+.detalle-objetivo {
+    color: #B65598; /* Color según la paleta */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el mensaje cuando no se encuentran resultados */
+.no-objetivos {
+    color: #c55; /* Color según la paleta */
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Estilos para los elementos de la lista */
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #F5F2FF !important; /* Color de fondo según la paleta */
+    border: none; /* Quitamos el borde existente */
+    box-shadow: 0 2px 5px rgba(230, 215, 246, 0.8); /* Sombra */
+}
+
+/*BUSCADOR COMPLETADO*/
+
+.input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #f5f2ff !important;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #c973b3 !important;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #c973b3 !important;
+}
+
+.btn-outline-secondary {
+   color: #c973b3 !important;
+   background-color: #f5f2ff !important;
+   border-color: #c973b3 !important;
+}
+
+.btn-outline-secondary:hover{
+   color: #f5f2ff !important;
+   background-color:  #c973b3 !important;
+   border-color: #c973b3 !important;
+}
+
+.no-objetivos {
+    color: #c973b3 !important;
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 10px;
+}
+/*estulos para la tabla al lado del buscador*/
+
+
+.titulo-proximos {
+    color: #c973b3;
+}
+
+.listado-proximos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.item-proximo {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.titulo-item {
+    color: #c973b3;
+    margin-bottom: 5px;
+}
+
+.detalle-item {
+    color: #B65598;
+    margin-top: 5px;
+}
+
+
+/*titulo vista buscador*/
+
+.titulo-search {
+    text-align: center; /* Para centrar el título */
+    margin-bottom: 100px; /* Espacio inferior para separarlo del buscador */
+    margin-top: 60px;
+}
+
+.texto-search {
+
+    color:#B65598;
+}
+
+.buscador-objetivos {
+    text-align: center; /* Para alinear el buscador al centro */
+}
+
+/* Estilos para los botones de marcar y desmarcar */
+.item-encontrado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.objetivo-info {
+    flex-grow: 1;
+}
+
+
+
+/* Sistema recompensas */
+.recompensas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 100px;
+}
+
+.recompensa {
+    display: inline-block;
+    margin-right: 20px; /* Incrementé el margen derecho para separar más las imágenes */
+}
+
+.recompensa img {
+    width: 230px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto; /* Altura automática */
+}
+
+.bloqueada img {
+    opacity: 0.3; /* Opacidad baja para las imágenes bloqueadas */
+}
+
+.desbloqueada img {
+    opacity: 1; /* Opacidad completa para las imágenes desbloqueadas */
+}
+/* Definir la animación */
+@keyframes desbloqueo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Aplicar la animación a la clase desbloqueada */
+.desbloqueada img {
+  animation: desbloqueo 0.5s ease-in-out;
+}
+
+.recompensa {
+    position: relative;
+    display: inline-block;
+}
+
+.texto-hover {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #b65598;
+    background-color: #e6d7f6;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(232 204 232);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.recompensa:hover .texto-hover {
+    opacity: 1;
+}
+
+
+

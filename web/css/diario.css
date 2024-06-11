@@ -1,0 +1,125 @@
+/*TITULO*/
+
+.titulo-diario {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #B65598; /* Cambia el color según lo desees */
+}
+
+.btn-primary {
+    color: #B65598 !important;
+    background-color: #F5F2FF !important;
+    border-color: #B65598 !important;
+    
+}
+
+/*Calendario JS*/
+
+.calendar-container {
+    padding: 50px; /* Ajusta el valor según sea necesario */
+}
+
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Necesario para el tooltip */
+}
+
+.calendar-table th {
+    background-color: #e6d7f6;
+    color: #B65598;
+}
+
+.calendar-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Necesario para el tooltip */
+    color: #B65598; /* Color de texto por defecto */
+}
+
+
+.calendar-table td[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #e6d7f6;
+    color: #B65598;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #d60c9f; /* Agregamos el borde con el color deseado */
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+}
+
+
+
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: lowercase; /* Convertir todas las letras a minúsculas */
+    color: #B65598;
+}
+
+.calendar-title::first-letter {
+    text-transform: uppercase; /* Convertir solo la primera letra a mayúscula */
+}
+
+
+.calendar-nav button {
+    background-color: #B65598;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.calendar-nav button:hover {
+    background-color: #d60c9f;
+}
+
+
+/*Modal*/
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color:#B65598;
+   
+}
+
+.modal-header{
+    background-color: #e6d7f6;
+}
+
+.modal-dialog{
+    color:#B65598;
+}
+
+.modal-body{
+    background-color: #F5F2FF ;
+}
+
+.modal-footer{
+    background-color: #e6d7f6;
+}

@@ -1,0 +1,186 @@
+#ikigai-card,
+#Funcionalidad-card,
+#Objetivos-card {
+    position: relative;
+    margin: 50px;
+    margin-bottom: 200px;
+    background-color: #e6d7f6; /* Color de fondo de la tarjeta */
+    border-radius: 10px; /* Radio de las esquinas de la tarjeta */
+    padding: 20px; /* Espaciado interno de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra de la tarjeta */
+    transition: transform 0.6s ease-in-out; /* Transición más lenta */
+    height: auto;
+}
+
+#ikigai-card:hover,
+#Funcionalidad-card:hover,
+#Objetivos-card:hover {
+    transform: scale(1.1);
+}
+
+#ikigai-card h2,
+#Funcionalidad-card h2,
+#Objetivos-card h2 {
+    text-align: center;
+    font-size: 20px; /* Tamaño de la fuente del título */
+    color: #B65598; /* Color del texto del título */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Espaciado inferior del título */
+}
+
+#ikigai-card p,
+#Funcionalidad-card p,
+#Objetivos-card p {
+    text-align: justify;
+    font-size: 16px; /* Tamaño de la fuente del párrafo */
+    color: #555; /* Color del texto del párrafo */
+    line-height: 1.5; /* Altura de línea del párrafo */
+}
+
+#ikigai-card .content-container,
+#Funcionalidad-card .content-container,
+#Objetivos-card .content-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(230, 215, 246, 0.9); /* Fondo del overlay con transparencia */
+    overflow: auto;
+ 
+}
+
+#ikigai-card:hover .content-container,
+#Funcionalidad-card:hover .content-container,
+#Objetivos-card:hover .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition-duration: 1s; /* Transición más lenta al hacer hover */
+}
+
+#ikigai-card, #Funcionalidad-card, #Objetivos-card{
+    display: flex !important;
+    justify-content: space-around;
+ 
+}
+
+#Funcionalidad-card .content-container p {
+    text-align: justify;
+}
+
+.imagen-transparente {
+    opacity: 0.7;
+    width: 150px; /* Ajusta el ancho según tu preferencia */
+    filter: drop-shadow(0 0 10px rgba(128, 0, 128, 0.5));
+   
+}
+
+
+/*Diario css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    
+    list-style: none;
+}
+
+.tabs {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.tabs li {
+    background-color: #e6d7f6;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B65598;
+    transition: .5s;
+    cursor: pointer;
+    font-size: 1.2rem; 
+}
+
+/* Agrega el efecto de zoom al hacer hover */
+.tabs li:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+    
+}
+
+
+.contents {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box {
+    gap: 20px;
+    background: #F5F2FF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    animation: moving 1s ease;
+}
+
+.box img {
+    width: 50%;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.box h3 {
+    color:  #B65598 ;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.box p {
+    color: #B65598 ;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,179 @@
+/* Estilos para la carta de explicación */
+
+.titulo-pensamientos {
+    color: #B65598 ; /* Color de texto deseado */
+    margin-bottom: 25px;
+}
+
+.explanation-card {
+    background-image: url('https://images.pexels.com/photos/1196312/pexels-photo-1196312.jpeg');
+    background-size: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 40px; /* Aumentar el padding para hacer la tarjeta más grande */
+}
+
+/* Estilos para el texto dentro de la carta de explicación */
+.explanation-card .card-title {
+    color: #F5F2FF;
+    font-size: 24px; /* Ajustar el tamaño del título si es necesario */
+    margin-bottom: 20px; /* Ajustar el espacio entre el título y el texto */
+    font-weight: bold;
+}
+
+.explanation-card .card-text {
+    color: #F5F2FF;
+    font-size: 16px; /* Ajustar el tamaño del texto si es necesario */
+    text-align: left;
+    margin-right: 300px;
+}
+
+.card-body{
+     color: #B65598 ;
+     background-color:  #F5F2FF;
+}
+.custom-card {
+    border: 2px solid #B65598; /* Nuevo color del borde morado */
+    box-shadow: 0px 0px 10px 0px #B65598; /* Nueva sombra morada */
+}
+
+
+/* Estilos para los campos de checkbox */
+.custom-checkbox .checkbox-label {
+    margin-left: 5px;
+    
+}
+
+/* Estilos para el botón de guardar */
+.btn-success:hover {
+    color: #F5F2FF !important;
+    background-color: #c973b3 !important;
+    border-color: #c973b3 !important;
+}
+
+.btn-success{
+    color: #F5F2FF !important;
+    background-color: #c973b3 !important;
+    border-color: #c973b3 !important;
+}
+
+
+
+/*tamaño del checkbox*/
+.custom-checkbox {
+    transform: scale(1.5); /* Ajusta el valor según el tamaño deseado */
+    margin-right: 20px;
+}
+
+
+/*formulario tipos emociones*/
+
+.imagen-formulario{
+    opacity:0.7;
+}
+
+.titulo-emociones{
+     margin-top:30px;
+     margin-bottom: 50px;
+     color:#B65598;
+}
+
+.card-body-emociones{
+    color:#B65598;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+
+
+ /* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-tarjeta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e6d7f6; /* Color de fondo según la paleta */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+    text-align: center;
+}
+
+.popup-contenido p {
+    margin-bottom: 20px;
+    color: #b65598; /* Color de texto según la paleta */
+}
+
+.opciones button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #f5f2ff !important;
+    background-color: #c973b3 !important;
+}
+
+
+
+.btn-continuar {
+    background-color: #B65598;
+    color: #F5F2FF;
+}
+
+.btn-continuar:hover {
+    background-color: #d60c9f; /* Color de fondo del botón al pasar el ratón según la paleta */
+}
+
+.btn-cancelar {
+    background-color: #B65598; /* Color de fondo del botón según la paleta */
+    color: #F5F2FF;
+}
+
+.btn-cancelar:hover {
+    background-color: #d60c9f; /* Color de fondo del botón al pasar el ratón según la paleta */
+}
+
+.btn-success {
+    color: #F5F2FF;
+    background-color: #d60c9f;
+}
+
+
+/*helpblock*/
+
+.help-block {
+    font-size: 12px; /* Cambia el tamaño de la letra según tus preferencias */
+    color: #d60c9f; /* Color del texto */
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff !important;
+    opacity: 1;
+}
+
+.help-block {
+    display: none; /* Ocultar por defecto */
+}
+
+.has-error .help-block {
+    display: block; /* Mostrar solo cuando hay un error */
+}
+
+
+

@@ -1,0 +1,46 @@
+/* Estilos para el mensaje de confirmación */
+.confirmation-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e6d7f6; /* Color de fondo del mensaje de confirmación */
+    border: 1px solid #d0b5d6; /* Color del borde del mensaje de confirmación */
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+/* Estilos para el mensaje de éxito */
+.success-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d0e9c6; /* Color de fondo del mensaje de éxito */
+    border: 1px solid #badbcc; /* Color del borde del mensaje de éxito */
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    color: #3c763d;
+}
+
+/* Estilo para el botón "Aceptar" en el mensaje de confirmación */
+.confirmation-message button {
+    background-color: #b65598; /* Color de fondo del botón "Aceptar" en el mensaje de confirmación */
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+/* Estilo para el botón "Aceptar" en el mensaje de éxito */
+.success-message button {
+    background-color: #5cb85c; /* Color de fondo del botón "Aceptar" en el mensaje de éxito */
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+}

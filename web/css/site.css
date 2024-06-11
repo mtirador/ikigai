@@ -1,0 +1,412 @@
+
+/*del contenedor he quitado el margen ancho*/
+
+main > .container {
+  padding: 60px 0px 20px;
+  
+}
+
+.footer {
+    background-color: #e6d7f6;
+    font-size: .9em;
+    height: 60px;
+    font-family: 'Open Sans', Roboto, Lato, Montserrat, Nunito, 'Source Sans Pro', 'PT Sans', sans-serif;
+
+  
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+body{
+   font-family: 'Open Sans', Roboto, Lato, Montserrat, Nunito, 'Source Sans Pro', 'PT Sans', sans-serif;
+   background-color:#F5F2FF !important;
+   margin: 0px !important;
+   padding: 0px !important;
+    
+}
+
+.bg-dark{
+    background-color: #e6d7f6 !important;
+   
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #B65598 !important;
+    font-family: 'Open Sans', Roboto, Lato, Montserrat, Nunito, 'Source Sans Pro', 'PT Sans', sans-serif;
+
+    transition: color 0.3s, transform 0.3s; /* Transición suave del color durante 0.3 segundos */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #d60c9f !important; /* Nuevo color al pasar el ratón sobre el enlace */
+    transform: scale(1.1);/* efecto zoom al hover */
+}
+
+
+/*footer*/
+
+  .footer .social-icons a:hover .fa {
+            color: #d60c9f;
+            transform: scale(1.1);
+            transition: color 0.3s, transform 0.3s;
+        }
+
+/*margen header entre logo*/
+
+.navbar-nav.custom-margin-left {
+    margin-left: 4rem; /* Define el margen izquierdo personalizado aquí */
+}
+
+
+
+/*Contenedor imagen*/
+
+.custom-container {
+    padding: 100px 0 100px !important;
+    background-image: url('https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*box-sizing: border-box; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    opacity: 0.8;
+    max-width: none !important;
+}
+
+
+
+/*Contenedor problemático con los márgenes*/
+
+.container {  
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: none !important;
+    
+}
+
+
+
+ .texto-infor {
+    color: #B65598;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: auto; /* Para centrar horizontalmente */
+    margin-right: auto; /* Para centrar horizontalmente */
+    max-width: 600px; /* Establecer una anchura máxima */
+    text-align: center;
+}
+        
+
+
+
+
+
+/* CRUDS*/
+
+h1{
+    color: #B65598 ;
+}
+.btn-success:hover {
+    color: #F5F2FF !important;
+    background-color: #c973b3;
+    border-color: #c973b3;
+}
+
+.btn-success{
+    color: #F5F2FF !important;
+    background-color: #c973b3;
+    border-color: #c973b3;
+}
+
+a {
+    color: #B65598 !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*desplegable cruds*/
+
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+    background-color: #e6d7f6;
+}
+
+.navbar-expand-md .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color:#F5F2FF; /* Cambia el color de fondo al pasar el ratón por encima */
+    color: #343a40; /* Cambia el color del texto al pasar el ratón por encima */
+}
+
+
+
+
+/* resultados Consulta ver detalles*/
+
+.row {
+   
+    margin: 50px !important;
+}
+
+ .jumbotron{
+    background-color: #e6d7f6;
+    margin:62px;
+    margin-top: 100px;
+}
+
+
+
+.titulo-entradas{
+     color:#B65598;
+}
+
+
+/*Layouts >main*/
+
+.fa {
+  
+    margin-right: 20px; 
+   
+}
+
+.social-icons{
+    margin-right:150px; /*margen izquier para que se puedan ver las redes sociales*/
+}
+
+
+.float-left{
+    margin-left:30px; 
+    color:#B65598;
+}
+
+
+/*Manejando el div titulo home*/
+.tituloHome {
+    position: relative;
+    text-align: center;
+    height: 500px; 
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/1245563/pexels-photo-1245563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%); /*mi primer polígono*/
+    
+}
+
+.animated-title {
+    color: #e6d7f6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    font-size: 4em;
+    font-weight: bold;
+    text-align: left;
+   /* font-family: "Meiryo", "Yu Gothic", sans-serif;*/
+    font-family: 'Open Sans', Roboto, Lato, Montserrat, Nunito, 'Source Sans Pro', 'PT Sans', sans-serif;
+
+    
+}
+
+.subtitulo {
+    color: #e6d7f6 !important;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+    font-size: 1.3em;
+    color: white;
+   /* font-family: "Meiryo", "Yu Gothic", sans-serif;*/
+    font-family: 'Open Sans', Roboto, Lato, Montserrat, Nunito, 'Source Sans Pro', 'PT Sans', sans-serif;
+
+}
+/*
+.linea-larga {
+    width: 16%; 
+    height: 1px; 
+    background-color:#e6d7f6  ; 
+    margin: 150px;
+    margin-top:330px;
+    opacity: 0.5;
+}
+*/
+
+
+
+
+/*hacer tarjetas de funciones*/
+.contenedor {
+    margin-top:90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta-boton {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px; 
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.tarjeta-boton:hover .card-inner img {
+    transform: scale(1.1); /*efecto de zoom al pasar el mouse */
+    
+}
+
+.tarjeta-boton .card-inner {
+    position: relative;
+    overflow: hidden; /*Oculta cualquier contenido que se desborde */
+}
+
+.tarjeta-boton img {
+    opacity:0.8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /*transición suave al efecto de zoom */
+    filter: drop-shadow(0 0 10px rgba(128, 0, 128, 0.5)); /*probando un truco de midu.dev*/
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(230, 215, 246, 0.7), rgba(230, 215, 246, 0.7)); /* Aplica un degradado de color al overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px; 
+}
+
+.tarjeta-boton:hover .overlay {
+    opacity: 1;
+}
+
+.tarjeta-boton:hover .card-inner img {
+    transform: scale(0.9); /* Cambia el valor de la escala según sea necesario */
+}
+
+.tarjeta-boton:hover {
+    box-shadow: 0 4px 6px rgba(182, 85, 152, 0.3), 
+                6px 0 6px rgba(182, 85, 152, 0.3); 
+}
+
+
+.overlay h3 {
+    color: #B65598;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /*sombra al texto */
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-inner.heartbeat-animation {
+    animation: heartbeat 1s infinite; /* Aplica la animación a todas las tarjetas de manera continua */
+}
+/*Editor */
+.description{
+    margin-bottom: 20px !important;
+}
+

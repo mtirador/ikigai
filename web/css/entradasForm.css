@@ -1,0 +1,105 @@
+/*imagen transparenete para integrarla mejor a la página*/
+.imagen-formulario{
+    opacity:0.2;
+}
+
+.entradas-form{
+    margin-top: 50px;
+}
+
+  /* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-tarjeta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e6d7f6; /* Color de fondo según la paleta */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px; /* Ajusta el ancho máximo según sea necesario */
+    text-align: center;
+}
+
+.popup-contenido p {
+    margin-bottom: 20px;
+    color: #b65598; /* Color de texto según la paleta */
+}
+
+.opciones button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #f5f2ff !important;
+    background-color: #c973b3 !important;
+}
+
+
+
+.btn-continuar {
+    background-color: #B65598;
+    color: #F5F2FF;
+}
+
+.btn-continuar:hover {
+    background-color: #d60c9f; /* Color de fondo del botón al pasar el ratón según la paleta */
+}
+
+.btn-cancelar {
+    background-color: #B65598; /* Color de fondo del botón según la paleta */
+    color: #F5F2FF;
+}
+
+.btn-cancelar:hover {
+    background-color: #d60c9f; /* Color de fondo del botón al pasar el ratón según la paleta */
+}
+
+.btn-success {
+    color: #F5F2FF !important;
+    background-color: #B65598 !important;
+    border-color: #B65598 !important;
+}
+
+.btn-success :hover{
+    color: #F5F2FF !important;
+    background-color: #B65598 !important;
+    border-color: #B65598 !important;
+}
+
+/* Estilo para los títulos */
+.entradas-form label {
+    color: #c973b3; /* Cambia el color del texto del título */
+    font-weight: bold; /* Hace que el texto del título esté en negrita */
+}
+
+
+.help-block {
+    font-size: 12px; /* Cambia el tamaño de la letra según tus preferencias */
+    color: #d60c9f; /* Color del texto */
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fff !important;
+    opacity: 1;
+}
+
+/*titulo como estas*/
+
+.page-title{
+    margin-top:30px;
+}
+

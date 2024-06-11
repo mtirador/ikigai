@@ -1,0 +1,352 @@
+.card-header {
+    background-color: #e6d7f6!important; /* Color de fondo del encabezado */
+    padding: 10px; /* Añade un poco de espacio alrededor del encabezado */
+}
+
+.card-body {
+    padding: 20px !important; /* Añade espacio alrededor del contenido */
+    background-color: #F5F2FF !important;
+}
+
+.col-lg-4 {
+    color: #B65598;
+}
+
+/*Botones detalles*/
+.btn-primary {
+    color: #B65598;
+    background-color: #e6d7f6!important;
+    border-color: #e6d7f6!important;
+}
+
+.description .more-link {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Vista detalles */
+.detalles_titulo {
+    margin-top: 100px; /* Modificado para mejorar la visualización en dispositivos pequeños */
+    margin-left: 30px; /* Modificado para mejorar la visualización en dispositivos pequeños */
+    color: #B65598;
+}
+
+.entry-details {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples líneas */
+    justify-content: space-between;
+    padding: 30px; /* Modificado para mejorar la visualización en dispositivos pequeños */
+    color: #B65598;
+}
+
+.entry-details2 {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    padding: 30px; /* Modificado para mejorar la visualización en dispositivos pequeños */
+    color: #B65598;
+}
+
+.entry-details2 .tarjeta_detalles {
+    max-width: 100%; /* Ajusta el ancho máximo de la tarjeta según sea necesario */
+}
+
+
+.scrollable-body {
+    max-height: 300px; /* Establece la altura máxima para permitir el scroll */
+    overflow-y: auto; /* Añade scroll vertical si el contenido excede la altura máxima */
+    padding: 0 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+
+.tarjeta_detalles {
+    margin-bottom: 20px;
+    background-color: #F5F2FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: calc(33.33% - 20px); /* Ajustado para que haya espacio entre las tarjetas */
+    animation-duration: 1s; /* Duración de la animación */
+    animation-fill-mode: both; /* Mantener el estado final de la animación */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    white-space: normal; /* Permite que el texto se envuelva normalmente */
+    overflow: hidden; /* Oculta cualquier contenido que se salga de los límites del contenedor */
+    width: 100%; /* Asegúrate de que la tarjeta ocupe el 100% del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto del elemento */
+}
+
+.tarjeta_detalles .card-header {
+    background-color: #e6d7f6!important;
+    padding: 10px;
+}
+
+.tarjeta_detalles .card-body {
+    padding: 20px;
+    background-color: #F5F2FF;
+    color: #B65598;
+    overflow-wrap: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    word-break: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    white-space: normal; /* Permite que el texto se envuelva normalmente */
+}
+
+/* Clase de animate.css para la animación fadeInLeft */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInLeft {
+    --animate-delay: 0.5s; /* Retraso de inicio */
+    animation-name: fadeInLeft;
+}
+
+/* Estilos para mejorar la visualización en dispositivos pequeños */
+@media (max-width: 768px) {
+    .entry-details {
+        flex-direction: column; /* Cambiar la dirección de la flexbox en dispositivos pequeños */
+    }
+
+    .tarjeta_detalles {
+        max-width: 100%; /* Establecer el ancho máximo al 100% en dispositivos pequeños */
+    }
+}
+
+/* Botón entradas */
+/* Estilos para el botón "Regresar" */
+.btn-regresar {
+    color: #B65598;
+    background-color: #e6d7f6!important;
+    border-color: #e6d7f6!important;
+    margin-top: 20px; /* Agregar espacio superior para separar del contenido anterior */
+    margin-right: 20px;
+}
+
+/* Estilos para el contenedor del botón "Regresar" */
+.boton-regresar-container {
+    text-align: right; /* Alinea el contenido a la derecha */
+    margin-top: 20px; /* Agrega espacio superior para separar del contenido anterior */
+}
+
+.card-header {
+    background-color: #e6d7f6!important; /* Color de fondo del encabezado */
+    padding: 10px; /* Añade un poco de espacio alrededor del encabezado */
+}
+
+.card-body {
+    padding: 20px !important; /* Añade espacio alrededor del contenido */
+    background-color: #F5F2FF !important;
+}
+
+.col-lg-4 {
+    color: #B65598;
+}
+
+/*Botones detalles*/
+.btn-primary {
+    color: #B65598;
+    background-color: #e6d7f6!important;
+    border-color: #e6d7f6!important;
+}
+
+.description .more-link {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+
+/* Vista detalles */
+.detalles_titulo {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    color: #B65598;
+}
+.titdet{
+    margin-left: 30px;
+
+}
+
+.entry-details {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en múltiples líneas */
+    justify-content: space-between;
+    padding: 30px;
+    color: #B65598;
+}
+
+.tarjeta_detalles {
+    margin-bottom: 20px;
+    background-color: #F5F2FF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: calc(33.33% - 20px); /* Ajustado para que haya espacio entre las tarjetas */
+    animation-duration: 1s; /* Duración de la animación */
+    animation-fill-mode: both; /* Mantener el estado final de la animación */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    white-space: normal; /* Permite que el texto se envuelva normalmente */
+    overflow: hidden; /* Oculta cualquier contenido que se salga de los límites del contenedor */
+    max-height: 300px; /* Establecer una altura máxima */
+    overflow-y: auto; /* Añadir scroll si el contenido supera la altura máxima */
+    width: 100%; /* Asegúrate de que la tarjeta ocupe el 100% del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho y alto del elemento */
+}
+
+.tarjeta_detalles .card-header {
+    background-color: #e6d7f6!important;
+    padding: 10px;
+}
+
+.tarjeta_detalles .card-body {
+    padding: 20px;
+    background-color: #F5F2FF;
+    color: #B65598;
+    overflow-wrap: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    word-break: break-word; /* Permite que las palabras largas se dividan en líneas múltiples */
+    white-space: normal; /* Permite que el texto se envuelva normalmente */
+}
+
+/* Clase de animate.css para la animación fadeInLeft */
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInLeft {
+    --animate-delay: 0.5s; /* Retraso de inicio */
+    animation-name: fadeInLeft;
+}
+
+/* Estilos para mejorar la visualización en dispositivos pequeños */
+@media (max-width: 768px) {
+    .entry-details {
+        flex-direction: column; /* Cambiar la dirección de la flexbox en dispositivos pequeños */
+    }
+
+    .tarjeta_detalles {
+        max-width: 100%; /* Establecer el ancho máximo al 100% en dispositivos pequeños */
+    }
+}
+
+/* Botón entradas */
+/* Estilos para el botón "Regresar" */
+.btn-regresar {
+    color: #B65598;
+    background-color: #e6d7f6!important;
+    border-color: #e6d7f6!important;
+    margin-top: 20px; /* Agregar espacio superior para separar del contenido anterior */
+    margin-right: 20px;
+}
+
+.btn-descargar{
+    color: #B65598;
+    background-color: #e6d7f6 !important;
+    border-color: #e6d7f6 !important;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+/*PDF*/
+
+.logo-container {
+    margin-top: 10px;
+    margin-right: 10px; /* Reducir el margen para que el título esté más cerca del logo */
+}
+
+.detalles_titulo {
+    margin-left: 10px; /* Ajustar el margen izquierdo para que el título esté más cerca del logo */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    margin-right: 10px; /* Reducir el margen para que el título esté más cerca del logo */
+}
+
+.detalles_titulo {
+    margin-left: 10px; /* Ajustar el margen izquierdo para que el título esté más cerca del logo */
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.detalles_titulo {
+    flex-grow: 1;
+}
+
+.toggle-description {
+    color: #B65598;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 0.85em; /* Ajusta el tamaño del texto aquí */
+}
+
+.toggle-description:hover {
+    text-decoration: underline;
+}
+
+.tarjeta_detalles {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: max-width 0.3s ease; /* Añadir transición para suavizar el cambio de tamaño */
+}
+
+.card-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.scrollable-body {
+    max-height: 200px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+
+/*Oculta las entradas al principio*/
+
+/* Oculta las entradas al principio */
+.entry {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Aparecen gradualmente las entradas cuando están en el área visible del navegador */
+.entry.visible {
+    opacity: 1;
+}
+
+/* Estiliza los enlaces de puntos suspensivos */
+.toggle-link {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+/* Estiliza los enlaces "ver menos" de los títulos */
+.small-toggle-link {
+    font-size: 0.6em; /* Tamaño más pequeño para "ver menos" */
+}
