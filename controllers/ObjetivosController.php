@@ -51,9 +51,7 @@ class ObjetivosController extends Controller
         if (Yii::$app->request->isPost) {
             if ($model->delete()) {
                 return $this->redirect(['index']);
-            } else {
-                // Manejar errores de eliminación aquí
-            }
+            } 
         }
 
         return $this->render('view', [
@@ -122,8 +120,8 @@ class ObjetivosController extends Controller
 
     public function actionContinuar()
     {
-        $numeroObjetivosCompletados = Objetivos::find()->where(['completado' => true])->count();
-        $proximoObjetivos = Objetivos::find()
+        $numberOfCompletedGoals = Objetivos::find()->where(['completado' => true])->count();
+        $nextGoals = Objetivos::find()
             ->where(['>', 'fechalimite', date('Y-m-d')])
             ->andWhere(['completado' => false])
             ->orderBy('fechalimite')
@@ -133,30 +131,30 @@ class ObjetivosController extends Controller
         $model = new Objetivos();
 
         return $this->render('_afterForm', [
-            'proximoObjetivos' => $proximoObjetivos,
+            'nextGoals' => $nextGoals,
             'model' => $model,
-            'numeroObjetivosCompletados' => $numeroObjetivosCompletados,
+            'numberOfCompletedGoals' => $numberOfCompletedGoals,
         ]);
     }
 
     public function actionBuscar($completado)
     {
         $searchResults = Objetivos::find()->where(['completado' => $completado])->all();
-        $proximoObjetivos = Objetivos::find()
+        $nextGoals = Objetivos::find()
             ->where(['>', 'fechalimite', date('Y-m-d')])
             ->andWhere(['completado' => false])
             ->orderBy('fechalimite')
             ->limit(3)
             ->all();
 
-        $numeroObjetivosCompletados = Objetivos::find()->where(['completado' => true])->count();
+        $numberOfCompletedGoals = Objetivos::find()->where(['completado' => true])->count();
         $model = new Objetivos();
 
         return $this->render('_afterForm', [
             'searchResults' => $searchResults,
-            'proximoObjetivos' => $proximoObjetivos,
+            'nextGoals' => $nextGoals,
             'model' => $model,
-            'numeroObjetivosCompletados' => $numeroObjetivosCompletados,
+            'numberOfCompletedGoals' => $numberOfCompletedGoals,
         ]);
     }
 
@@ -168,10 +166,10 @@ class ObjetivosController extends Controller
     if ($model->save()) {
         Yii::$app->session->setFlash('success', 'El objetivo se marcó como completado correctamente.');
 
-        $numeroObjetivosCompletados = Objetivos::find()->where(['completado' => true])->count();
+        $numberOfCompletedGoals = Objetivos::find()->where(['completado' => true])->count();
 
         // Desbloquear recompensas
-        $this->desbloquearRecompensas($numeroObjetivosCompletados);
+        $this->rewardsUnlocked($numberOfCompletedGoals);
     } else {
         Yii::$app->session->setFlash('error', 'Hubo un error al marcar el objetivo como completado.');
     }
@@ -179,9 +177,10 @@ class ObjetivosController extends Controller
     return $this->redirect(['continuar']);
 }
 
-private function desbloquearRecompensas($numeroObjetivosCompletados)
+
+private function rewardsUnlocked($numberOfCompletedGoals)
 {
-    $recompensasDesbloqueadas = [
+    $rewardsUnlocked = [
         1 => false,
         2 => false,
         3 => false,
@@ -189,24 +188,24 @@ private function desbloquearRecompensas($numeroObjetivosCompletados)
         5 => false
     ];
 
-    if ($numeroObjetivosCompletados >= 1) {
-        $recompensasDesbloqueadas[1] = true;
+    if ($numberOfCompletedGoals >= 1) {
+        $rewardsUnlocked[1] = true;
     }
-    if ($numeroObjetivosCompletados >= 5) {
-        $recompensasDesbloqueadas[2] = true;
+    if ($numberOfCompletedGoals >= 5) {
+        $rewardsUnlocked[2] = true;
     }
-    if ($numeroObjetivosCompletados >= 10) {
-        $recompensasDesbloqueadas[3] = true;
+    if ($numberOfCompletedGoals >= 10) {
+        $rewardsUnlocked[3] = true;
     }
-    if ($numeroObjetivosCompletados >= 12) {
-        $recompensasDesbloqueadas[4] = true;
+    if ($numberOfCompletedGoals >= 12) {
+        $rewardsUnlocked[4] = true;
     }
-    if ($numeroObjetivosCompletados >= 15) {
-        $recompensasDesbloqueadas[5] = true;
+    if ($numberOfCompletedGoals >= 15) {
+        $rewardsUnlocked[5] = true;
     }
 
-    // Guardar el estado de las recompensas en la sesión
-    foreach ($recompensasDesbloqueadas as $recompensa => $desbloqueada) {
+    
+    foreach ($rewardsUnlocked as $recompensa => $desbloqueada) {
         Yii::$app->session->set('recompensa' . $recompensa, $desbloqueada);
     }
 }
@@ -222,7 +221,6 @@ private function desbloquearRecompensas($numeroObjetivosCompletados)
         } else {
             Yii::$app->session->setFlash('error', 'Hubo un error al desmarcar el objetivo como completado.');
         }
-
         return $this->redirect(['continuar']);
     }
 

@@ -64,7 +64,7 @@ $this->registerCssFile(Url::to('@web/css/informacion.css'));
 </div>
 
 <div class="row d-flex">
-    <!-- Tarjeta 1 -->
+    <!--  1 -->
     <div class="col-md-4 mb-4">
         <div class="card-container" id="ikigai-card">
             <div class="image-container">
@@ -78,7 +78,7 @@ $this->registerCssFile(Url::to('@web/css/informacion.css'));
             </div>
         </div>
     </div>
-    <!-- Tarjeta 2 -->
+    <!-- 2 -->
     <div class="col-md-4 mb-4">
         <div class="card-container" id="Funcionalidad-card">
             <div class="image-container">
@@ -92,7 +92,7 @@ $this->registerCssFile(Url::to('@web/css/informacion.css'));
             </div>
         </div>
     </div>
-    <!-- Tarjeta 3 -->
+    <!--  3 -->
     <div class="col-md-4 mb-4">
         <div class="card-container" id="Objetivos-card">
             <div class="image-container">

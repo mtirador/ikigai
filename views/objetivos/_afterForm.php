@@ -22,8 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 <?php
-// Array con los textos correspondientes a cada imagen
-$textos = [
+$texts = [
     '1 objetivo',
     '5 objetivos',
     '10 objetivos',
@@ -31,8 +30,7 @@ $textos = [
     '15 objetivos'
 ];
 
-// Desbloquear recompensas en base al número de objetivos completados
-$recompensasDesbloqueadas = [
+$rewardsUnlocked = [
     1 => false,
     2 => false,
     3 => false,
@@ -40,49 +38,42 @@ $recompensasDesbloqueadas = [
     5 => false
 ];
 
-if ($numeroObjetivosCompletados >= 1) {
-    $recompensasDesbloqueadas[1] = true;
+if ($numberOfCompletedGoals >= 1) {
+    $rewardsUnlocked[1] = true;
 }
-if ($numeroObjetivosCompletados >= 5) {
-    $recompensasDesbloqueadas[2] = true;
+if ($numberOfCompletedGoals >= 5) {
+    $rewardsUnlocked[2] = true;
 }
-if ($numeroObjetivosCompletados >= 10) {
-    $recompensasDesbloqueadas[3] = true;
+if ($numberOfCompletedGoals >= 10) {
+    $rewardsUnlocked[3] = true;
 }
-if ($numeroObjetivosCompletados >= 12) {
-    $recompensasDesbloqueadas[4] = true;
+if ($numberOfCompletedGoals >= 12) {
+    $rewardsUnlocked[4] = true;
 }
-if ($numeroObjetivosCompletados >= 15) {
-    $recompensasDesbloqueadas[5] = true;
+if ($numberOfCompletedGoals >= 15) {
+    $rewardsUnlocked[5] = true;
 }
 ?>
 
 <div class="recompensas">
     <?php for ($i = 1; $i <= 5; $i++): ?>
         <?php
-        // Determinar si la recompensa está desbloqueada
-        $claseDesbloqueo = ($recompensasDesbloqueadas[$i]) ? 'desbloqueada' : 'bloqueada';
+        $classUnlocked = ($rewardsUnlocked[$i]) ? 'desbloqueada' : 'bloqueada';
         ?>
-        <div class="recompensa <?= $claseDesbloqueo; ?>">
+        <div class="recompensa <?= $classUnlocked; ?>">
             <?= Html::img('@web/images/recompensa/' . $i . 'obj.png', ['alt' => 'Recompensa ' . $i]); ?>
-            <!-- Texto a mostrar al hacer hover -->
-            <div class="texto-hover"><?= isset($textos[$i - 1]) ? $textos[$i - 1] : '' ?></div>
+    
+            <div class="texto-hover"><?= isset($texts[$i - 1]) ? $texts[$i - 1] : '' ?></div>
         </div>
     <?php endfor; ?>
 </div>
 
-
-
-
-
-<!-- Vista de Objetivos Próximos y Buscador -->
 <div class="container-tablas">
 
     <div class="row">
 
-        <!-- Columna del Buscador de Objetivos -->
         <div class="col-md-6 buscador-objetivos">
-            <!-- Formulario de búsqueda -->
+
             <form id="searchForm" action="<?= Url::to(['objetivos/buscar']) ?>" method="get">
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -98,7 +89,7 @@ if ($numeroObjetivosCompletados >= 15) {
                 </div>
             </form>
 
-            <!-- Lista de objetivos encontrados -->
+            
             <div class="scrollable-list" id="objetivos-encontrados">
                 <?php if (isset($searchResults) && !empty($searchResults)): ?>
                     <ul class="list-group listado-encontrados">
@@ -128,11 +119,11 @@ if ($numeroObjetivosCompletados >= 15) {
 
 
         </div>
-        <!-- Columna de Objetivos Próximos -->
+      
         <div class="col-md-6 objetivos-proximos">
             <h3 class="titulo-proximos">Próximos Objetivos</h3>
             <ul class="list-group listado-proximos">
-                <?php foreach ($proximoObjetivos as $objetivo): ?>
+                <?php foreach ($nextGoals as $objetivo): ?>
                     <li class="list-group-item item-proximo">
                         <h4 class="titulo-item"><?= Html::encode($objetivo->denominacion) ?></h4>
                         <p class="detalle-item"><strong>Fecha Límite:</strong> <?= Yii::$app->formatter->format($objetivo->fechalimite, 'date') ?></p>

@@ -9,7 +9,6 @@ $this->registerCssFile(Url::to('@web/css/entradasDiario.css'));
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-<!-- Contenedor para el logo y el título -->
 <div class="header-container">
     <div class="logo-container">
         <img src="<?= Url::to('@web/images/morado.png') ?>" alt="Logo de Ikigai" class="logo">

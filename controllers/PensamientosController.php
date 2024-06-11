@@ -85,21 +85,21 @@ public function actionCreate($identrada)
     $model = new Pensamientos();
 
     if ($model->load(Yii::$app->request->post()) && $model->save()) {
-        // Guardar el registro en Registropensamientos
+       
         $registroPensamientos = new Registropensamientos();
         $registroPensamientos->identrada = $identrada;
-        $registroPensamientos->codpen = $model->codpen; // Utiliza el código del pensamiento guardado
+        $registroPensamientos->codpen = $model->codpen; 
         $registroPensamientos->save();
 
         Yii::$app->session->setFlash('success', 'Pensamiento guardado correctamente.');
         
-        // Redirigir a la creación de emociones pasando el ID de entrada
+       
         return $this->redirect(['emociones/create', 'identrada' => $identrada]);
     }
 
     return $this->render('create', [
         'model' => $model,
-        'identrada' => $identrada, // Pasa $identrada a la vista
+        'identrada' => $identrada, 
     ]);
 }
 

@@ -68,7 +68,7 @@ class EntradasController extends Controller
 public function actionView($identrada)
 {
     $model = $this->findModel($identrada);
-    $editModel = new Entradas(); // Modelo para el formulario de edición
+    $editModel = new Entradas(); 
 
     if ($editModel->load(Yii::$app->request->post()) && $editModel->save()) {
         Yii::$app->session->setFlash('success', 'Entrada actualizada correctamente.');
@@ -134,7 +134,7 @@ public function actionDelete($identrada)
     $model = $this->findModel($identrada);
     $model->delete();
 
-    // Establecer un mensaje de confirmación
+    // confirmation flash
     Yii::$app->session->setFlash('success', 'Entrada eliminada correctamente.');
 
     return $this->redirect(['diario']);
@@ -159,7 +159,7 @@ public function actionDelete($identrada)
     
   public function actionContinuar($identrada)
 {
-    // Redirige al formulario de creación de pensamientos y pasa el ID de la entrada como parámetro GET
+    // Redirect to the thought creation form and pass the entry ID as a GET parameter
     return $this->redirect(['pensamientos/create', 'identrada' => $identrada]);
 }
 

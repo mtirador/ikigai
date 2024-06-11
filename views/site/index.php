@@ -9,7 +9,7 @@ use yii\web\View;
 $this->registerCssFile(Url::to('@web/css/entradasDiario.css'));
 $this->registerCssFile(Url::to('@web/css/modalHome.css'));
 
-/* Archivos Js */
+/* Files Js */
 $this->registerJsFile(Url::to('@web/js/scrollVisibilidad.js'), ['position' => View::POS_END]);
 $this->registerJsFile(Url::to('@web/js/heartBeat.js'));
 $this->registerJsFile(Url::to('@web/js/modalHandling.js'), ['position' => View::POS_END]);
@@ -57,7 +57,7 @@ $this->registerJsFile(Url::to('@web/js/modalHandling.js'), ['position' => View::
         </div>
     </div>
 
-    <!-- Entradas diario -->
+
     <div class="site-index">
         <div class="jumbotron entry">
             <h2 class="titulo-entradas">Últimas Entradas de Diario</h2>
@@ -86,7 +86,7 @@ $this->registerJsFile(Url::to('@web/js/modalHandling.js'), ['position' => View::
         </div>
     </div>
 
-    <!-- Modal -->
+
     <div id="entryExistsModal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close">&times;</span>

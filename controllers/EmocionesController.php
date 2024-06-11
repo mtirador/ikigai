@@ -79,38 +79,39 @@ class EmocionesController extends Controller {
         $model = new Emociones();
 
         if ($model->load(Yii::$app->request->post())) {
-            // Verificar si 'tipoEmociones' está definido en la solicitud POST
+            // Check if 'tipoEmociones' is defined in the POST request
             $postData = Yii::$app->request->post('Emociones');
             if (isset($postData['tipoEmociones'])) {
                 $model->tipoEmociones = $postData['tipoEmociones'];
             } else {
-                $model->tipoEmociones = []; // Asignar un arreglo vacío si no está definido
+                $model->tipoEmociones = []; // Assign an empty array if it is not defined
+
             }
 
             if ($model->save()) {
-                // Establecer la relación con la entrada
+                // Set the relationship with the entry
                 $registroEmociones = new Registroemociones();
                 $registroEmociones->identrada = $identrada;
-                $registroEmociones->codemo = $model->codemo; // Utiliza el código de la emoción guardada
+                $registroEmociones->codemo = $model->codemo; // Use the saved emotion code
                 $registroEmociones->save();
 
-                // Guardar los tipos de emociones seleccionados
+                // Save the selected emotion types
                 if (!empty($model->tipoEmociones)) {
                     foreach ($model->tipoEmociones as $tipoId) {
-                        $registroTiposEmociones = new Tiposemociones(); // Cambia a la clase correcta
+                        $registroTiposEmociones = new Tiposemociones(); 
                         $registroTiposEmociones->codemo = $model->codemo;
-                        $registroTiposEmociones->tipos = $tipoId; // Ajusta esto según la estructura de tu modelo
+                        $registroTiposEmociones->tipos = $tipoId; 
                         $registroTiposEmociones->save();
                     }
                 }
 
                 Yii::$app->session->setFlash('success', 'Emoción guardada correctamente.');
-                // Redirigir a la acción de creación de Sensaciones pasando el parámetro identrada
+                
                 return $this->redirect(['sensaciones/create', 'identrada' => $identrada]);
             }
         }
 
-        // Filtrar los tipos de emociones para excluir los que ya han sido seleccionados
+    // Filter the emotion types to exclude those that have already been selected
         $tiposEmociones = Tiposemociones::find()
                 ->where(['not in', 'idtipos', !empty($model->tipoEmociones) ? array_column($model->tipoEmociones, 'idtipos') : []])
                 ->all();
