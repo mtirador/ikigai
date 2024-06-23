@@ -12,11 +12,12 @@ This project is a Yii2 application configured to run within a Docker container. 
 
 - Docker
 - Docker Compose
-
+- Xampp (v3.2.3)
+  
 ## Installation and Setup
 
 ### Clone the repository
-
+Clone the repository into the base web directory (if using Xampp, it would be in xampp/htdocs/).
 ```bash
 git clone https://github.com/mtirador/ikigai.git
 cd ikigai
