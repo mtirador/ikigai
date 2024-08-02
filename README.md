@@ -28,15 +28,7 @@ cd ikigai
 composer update
 ```
 
-### Install with Docker
-
-Update your vendor packages
-
-    docker-compose run --rm php composer update --prefer-dist
-    
-Run the installation triggers (creating cookie validation code)
-
-    docker-compose run --rm php composer install    
+### Install with Docker   
     
 Start the container
 
