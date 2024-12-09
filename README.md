@@ -25,7 +25,7 @@ cd ikigai
 ### Download dependencies
 
 ```bash
-docker-compose run --rm php composer update
+docker-compose run --rm php composer install
 ```
 
 ### Install with Docker   
